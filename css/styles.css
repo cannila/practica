@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+  .grid{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-areas: "header header"
+	"hero hero"
+	"servicios servicios__video"
+	"actividades actividades__img"
+	"footer footer";
+}
+  .header{
+	display: grid;
+	grid-template-areas: header;
+	align-content: start;
+	grid-column: 1/-1;
+	grid-column: span 2;	  
+	background-color: rgb(164, 172, 134);
+}
+ .hero{
+	  display: grid;
+	  grid-template-areas: hero;
+	  grid-column: 1/-1;
+	  background-image: url(../img/hehehero.jpg);
+	  background-size: cover;
+	  background-repeat: no-repeat; 
+	  grid-column: span 2;
+  }
+  .hero__contenido{
+	
+	font-size: 2rem;
+	color: rgb(21, 18, 187);
+	padding: 1rem;
+	height: 80vh;
+}
+  .btn{
+	  display: inline-flex;
+	  flex-wrap: nowrap;
+	  background-color: rgb(188, 108, 37);
+	  color: rgb(254, 250, 224);
+	  transition: all 0.5s ease;
+
+  }
+  .btn:hover{
+	  background-color: rgb(254, 250, 224);
+	  color:  rgb(188, 108, 37);
+	  cursor: pointer;
+
+  }
+ 
+ 
+  .servicios{
+	  display: grid;
+	  grid-template-areas: servicios;
+	  grid-column: 1/2;
+	  grid-column: span 1;
+  }
+  .servicios__video{
+	  display: grid;
+	  grid-template-areas: servicios__video;
+	  grid-column: 2/3;
+	  grid-column: span 1;
+  }
+  .actividades{
+	  display: grid;
+	  grid-template-areas: actividades;
+	  grid-column: 1/2;
+	  grid-column: span 1;
+  }
+  .actividades__img{
+	  grid-template-areas: actividades__img;
+	  grid-column: 2/3;
+	  grid-column: span 1;
+  }
+  .footer{
+	display: grid;
+	grid-template-areas: header;
+	align-content: start;
+	grid-column: 1/-1;
+	grid-column: span 2;	  
+	background-color: rgb(164, 172, 134);
+  }
+  .titulo{
+	  font-size: 2rem;
+	  color: rgb(127, 79, 36);
+	  text-align: start;
+	  margin-left: 1rem;
+
+  }
+  .formulario{
+	color: rgb(88, 47, 14);
+	font-size: 1.2rem;
+  }
+  .body {
+	background-image: linear-gradient(45deg, transparent 20%, rgba(194, 197, 170, 0.26) 25%, transparent 25%), 
+					  linear-gradient(-45deg, transparent 20%, rgba(194, 197, 170, 0.144) 25%, transparent 25%), 
+					  linear-gradient(-45deg, transparent 75%, rgba(194, 197, 170, 0.151) 80%, transparent 0),
+					  radial-gradient(rgba(128, 128, 128, 0.473) 2px, transparent 0);
+	background-size: 30px 30px, 30px 30px;
+  }
